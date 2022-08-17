@@ -102,8 +102,8 @@ def stats(update, context):
                     [
                         [                  
                             InlineKeyboardButton(
-                                    text="REPO",
-                                    url="https://github.com/SOME-1HING/ShikimoriBot"),
+                                    text="Bᴏᴛ Oᴡɴᴇʀ",
+                                    url="https://t.me/Zenko_0"),
                         ]
                     ]
                 ),
@@ -118,8 +118,8 @@ def stats(update, context):
                     [
                         [                  
                             InlineKeyboardButton(
-                                    text="REPO",
-                                    url="https://github.com/SOME-1HING/ShikimoriBot"),
+                                    text="Bᴏᴛ Oᴡɴᴇʀ",
+                                    url="https://t.me/Zenko_0"),
                         ]
                     ]
                 ),
@@ -133,7 +133,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/{UPDATE_CHANNEL})\n\n"
+                    + f"\n\n✦ [Sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT}) | ✦ [Uᴘᴅᴀᴛᴇs](https://t.me/{UPDATE_CHANNEL})\n\n"
                 )
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -141,8 +141,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                                text="REPO",
-                                url="https://github.com/SOME-1HING/ShikimoriBot"),
+                                text="Bᴏᴛ Oᴡɴᴇʀ",
+                                url="https://t.me/Zenko_0"),
                      ] 
                 ]
             ),
