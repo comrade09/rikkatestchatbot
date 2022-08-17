@@ -87,8 +87,8 @@ async def _(event):
 
 
 __help__ = """
-Book 
+Bᴏᴏᴋ 
 Available commands:
  - `/book` <book name> : Get the download link of the book
 """
-__mod_name__ = "Books"
+__mod_name__ = "Bᴏᴏᴋs"
