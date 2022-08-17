@@ -339,7 +339,7 @@ __handlers__ = [
 ]
 
 
-__mod_name__ = "Animation 🎬"
+__mod_name__ = "Aɴɪᴍᴀᴛɪᴏɴ"
 
 __help__ = """
 - `/love` ❣️
