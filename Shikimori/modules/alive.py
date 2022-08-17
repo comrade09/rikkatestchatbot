@@ -81,8 +81,8 @@ __handlers__ = [
     ALIVE_HANDLER,
 ]
 
-__mod_name__ = "Alive ✨"
+__mod_name__ = "Aʟɪᴠᴇ"
 __help__ = """
-*ALIVE*
+*Aʟɪᴠᴇ*
  ❍ `/alive` :Check BOT status
 """
