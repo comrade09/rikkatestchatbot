@@ -245,10 +245,10 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                     elif wel_id in ("gif", "webp"):
                         update.effective_message.reply_animation(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
                     else:
-                        update.effective_message.reply_text(TEXT, reply_to_message_id=reply)
+                        update.effective_message.reply_photo(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
 
                 except:
-                    update.effective_message.reply_text("Behold!! My Owner is Here.", reply_to_message_id=reply)
+                    update.effective_message.reply_photo("https://telegra.ph/file/4de9f238efba2a050f225.jpg","Behold!! My Husband is Here.", reply_to_message_id=reply)
 
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
