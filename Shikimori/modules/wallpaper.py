@@ -56,9 +56,9 @@ def wall(update: Update, context: CallbackContext):
 WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall, run_async=True)
 dispatcher.add_handler(WALLPAPER_HANDLER)
 
-__mod_name__ = "Wallpaper"
+__mod_name__ = "Wᴀʟʟᴘᴀᴘᴇʀ"
 __help__ = """
-*Wallpaper*
+*Wᴀʟʟᴘᴀᴘᴇʀ*
  ❍ `/wall` : Search for wallpaper of given query
  ❍ `/wallpaper` : Get a random wallpaper
 """
