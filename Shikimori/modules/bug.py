@@ -157,6 +157,6 @@ __handlers__ = [BUG_HANDLER]
 __mod_name__ = "Bᴜɢ"
 
 __help__ = """
-*Bug*
+*Bᴜɢ*
  ❍ `/bug` <information>: Reports bug to support group.
 """
