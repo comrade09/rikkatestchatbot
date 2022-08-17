@@ -222,21 +222,21 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
         if should_welc:
             
             # Give the Repo Creator a special welcome
-            if new_mem.id == 5598826878:
+            if new_mem.id == 1904355959:
                 update.effective_message.reply_photo(
-                    "https://telegra.ph/file/f00a3decb0fa64900098c.jpg", reply_to_message_id=reply
+                    "https://telegra.ph/file/4de9f238efba2a050f225.jpg", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"SOME1HING Joined the Chat"
+                    f"Jean Joined the Chat"
                 )
                 continue
 
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                TEXT = "Behold!! My Owner is Here."
+                TEXT = "Behold!! My Husband is Here."
                 try:
                     if wel_id in ("jpeg", "jpg", "png"):
                         update.effective_message.reply_photo(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
@@ -1378,7 +1378,7 @@ dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 dispatcher.add_handler(CAPTCHA_BUTTON_VERIFY_HANDLER)
 
-__mod_name__ = "Greetings 👋"
+__mod_name__ = "Gʀᴇᴇᴛɪɴɢs"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
