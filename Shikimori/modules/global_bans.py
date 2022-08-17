@@ -111,28 +111,28 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own.",
+            "That user is my lover.",
         )
         return
 
     if int(user_id) in DRAGONS:
         message.reply_text(
-            "I spy, with my little eye... a disaster! Why are you guys turning on each other?",
+            "This user is my boy friend.",
         )
         return
 
     if int(user_id) in DEMONS:
         message.reply_text(
-            "OOOH someone's trying to gban a Demon Disaster! *grabs popcorn*",
+            "This user is my crush.",
         )
         return
 
     if int(user_id) in TIGERS:
-        message.reply_text("That's a Tiger! They cannot be banned!")
+        message.reply_text("This user is my ex boyfriend.")
         return
 
     if int(user_id) in WOLVES:
-        message.reply_text("That's a Wolf! They cannot be banned!")
+        message.reply_text("This user is my friend.")
         return
 
     if user_id == bot.id:
@@ -562,11 +562,11 @@ if STRICT_GBAN:  # enforce GBANS if this is set
     __handlers__.append((GBAN_ENFORCER, GBAN_ENFORCE_GROUP))
 
 
-__mod_name__ = "Anti-Spam 🚫"
+__mod_name__ = "Aɴᴛɪ Sᴘᴀᴍ"
 
 
 __help__ = f"""
-*Admins only:*
+*Aᴅᴍɪɴs Oɴʟʏ*
 ❂ `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 
 Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
