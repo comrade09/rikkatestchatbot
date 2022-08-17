@@ -244,10 +244,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/Shikimori_bot_Updates/9"),
+                             url="https://t.me/KaoriXupdate/12"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/Shikimori_bot_Updates/6"),
+                             url="https://t.me/KaoriXupdate/9"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -287,7 +287,7 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n• Username: @{html.escape(user.username)}"
 
-    text += f"\n• Userlink: {mention_html(user.id, 'link')}"
+    text += f"\n• Crush: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n• Presence: <code>{}</code>"
@@ -311,21 +311,21 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Owner'."
+        text += "\n\nThis person is my 'Husband'."
     elif user.id in DEV_USERS:
-        text += "\n\nThis person is my 'Best Friend'."
+        text += "\n\nThis person is my 'Lover'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis person is my 'Friend'."
+        text += "\n\nThis person is my 'Boyfriend'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is my 'Servant'."
+        text += "\n\nThis person is my 'Crush'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person is just a 'Peasant'."
+        text += "\n\nThis person is just a 'Ex-Boyfriend'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis person is just a 'Slave'."
+        text += "\n\nThis person is just a 'Friend'."
         disaster_level_present = True
 
 
@@ -543,7 +543,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info ℹ️"
+__mod_name__ = "Iɴғᴏ"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
