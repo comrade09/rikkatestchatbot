@@ -99,7 +99,7 @@ def split_message(msg: str) -> List[str]:
 #         pairs.append((modules[-1],))
 
 #     else:
-#         pairs += [[EqInlineKeyboardButton("Go Home", callback_data="home_")]]
+#         pairs += [[EqInlineKeyboardButton("Go Home", callback_data="Shikimori_back")]]
 
 #     return pairs
 
@@ -157,7 +157,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
         ] + [
             (
                 EqInlineKeyboardButton("❮", callback_data="{}_prev({})".format(prefix, modulo_page),),
-                EqInlineKeyboardButton("Go Home", callback_data="home_"),
+                EqInlineKeyboardButton("Go Home", callback_data="Shikimori_back"),
                 EqInlineKeyboardButton("❯", callback_data="{}_next({})".format(prefix, modulo_page),),
             )
         ]
