@@ -45,9 +45,9 @@ async def _(event):
             await event.reply(mentions)
     await event.reply(mentions)
 
-__mod_name__ = "TagAll"
+__mod_name__ = "Tᴀɢᴀʟʟ"
 __help__ = """
-*Tag All*
+*Tᴀɢ Aʟʟ*
  ❍ `/users` : Get txt file of all users in your group.
  ❍ `/all` : (reply to message or add another message) To mention all members in your group, without exception.
  ❍ `/tagall` : (reply to message or add another message) To mention all members in your group, without exception.
