@@ -248,7 +248,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                         update.effective_message.reply_photo(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
 
                 except:
-                    update.effective_message.reply_photo("https://telegra.ph/file/4de9f238efba2a050f225.jpg","Behold!! My Husband is Here.", reply_to_message_id=reply)
+                    update.effective_message.reply_photo("https://telegra.ph/file/3ccaf090f5d678ac91886.png","Behold!! My Husband is Here.", reply_to_message_id=reply)
 
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                 
             # Welcome Devs
             if new_mem.id in DEV_USERS:
-                update.effective_message.reply_text(
+                update.effective_message.reply_photo("https://telegra.ph/file/2fe0d5fd9097fbc0228b5.jpg", 
                     "Whoa! My Best Friend just joined!",
                     reply_to_message_id=reply,
                 )
