@@ -260,7 +260,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_photo("https://telegra.ph/file/2fe0d5fd9097fbc0228b5.jpg", 
-                    "Whoa! My Best Friend just joined!",
+                    "Whoa! My Lover just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -268,7 +268,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Sudos
             if new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Huh! My Friend just joined! Stay Alert!",
+                    "Huh! My Boy Friend just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -276,7 +276,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Support
             if new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! one of my servants just joined!",
+                    "Huh! one of my crush just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -284,7 +284,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome WOLVES
             if new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Oof! a slave Users just joined!", reply_to_message_id=reply
+                    "Oof! My Ex-Boyfriend just joined!", reply_to_message_id=reply
                 )
                 continue
 
