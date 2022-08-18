@@ -66,9 +66,9 @@ async def _(event):
         parse_mode="HTML",
     )
 
-__mod_name__ = "Cricket Score 🏏"
+__mod_name__ = "Cʀɪᴄᴋᴇᴛ Sᴄᴏʀᴇ"
 __help__ = """
-*Cricket Score*
+*Cʀɪᴄᴋᴇᴛ Sᴄᴏʀᴇ*
  ❍ `/c` : To check live cricket score
  ❍ `/cs` : To check live cricket score
 """
