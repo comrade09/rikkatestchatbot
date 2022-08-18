@@ -164,9 +164,9 @@ async def karma(_, message):
         karma = karma["karma"] if karma else 0
         await message.reply_text(f"**Total Points**: __{karma}__")
 
-__mod_name__ = "Karma ☯️"
+__mod_name__ = "Kᴀʀᴍᴀ"
 __help__ = """
-*Karma*
+*Kᴀʀᴍᴀ*
  ❍ `/karma` : To enable / disable Karma system
  ❍ `/karmastat`: Get stats of karma for your chat
  ❍ Reply to any meassage with (`+, +1, thx, thanx, thanks, pro, cool, good,pro, pero, op, nice, noice, best, uwu, owo, right, correct, peru, piro`, 👍) to increse karma of user.
