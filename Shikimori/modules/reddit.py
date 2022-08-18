@@ -22,7 +22,7 @@ from pyrogram import filters
 from Shikimori import pbot as app, arq
 from Shikimori.utils.errors import capture_err
 
-__mod_name__ = "Reddit"
+__mod_name__ = "Rᴇᴅᴅɪᴛ"
 
 
 
@@ -54,8 +54,8 @@ async def reddit(_, message):
     except Exception as e:
         await m.edit_text(e.MESSAGE)
 
-__mod_name__ = "Reddit"
+__mod_name__ = "Rᴇᴅᴅɪᴛ"
 __help__ = """
-*Reddit*
+*Rᴇᴅᴅɪᴛ*
  ❍ `/reddit` : Searches reddit
 """
