@@ -136,14 +136,14 @@ def weather(update, context):
 
 
 __help__ = """
-Weather module:
+weather module:
 
 × `/weather` <city>: Gets weather information of particular place!
 
 \* To prevent spams weather command and the output will be deleted after 30 seconds
 """
 
-__mod_name__ = "Weather 🌩️"
+__mod_name__ = "Wᴇᴀᴛʜᴇʀ"
 
 WEATHER_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
 
