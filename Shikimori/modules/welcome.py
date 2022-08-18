@@ -267,7 +267,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome Sudos
             if new_mem.id in DRAGONS:
-                update.effective_message.reply_text(
+                update.effective_message.reply_photo("https://telegra.ph/file/0fba20a6bcf33efa4dadc.jpg", 
                     "Huh! My Boy Friend just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
@@ -275,7 +275,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome Support
             if new_mem.id in DEMONS:
-                update.effective_message.reply_text(
+                update.effective_message.reply_photo("https://telegra.ph/file/ad81be737ed87506e67b1.jpg", 
                     "Huh! one of my crush just joined!",
                     reply_to_message_id=reply,
                 )
@@ -283,8 +283,8 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome WOLVES
             if new_mem.id in WOLVES:
-                update.effective_message.reply_text(
-                    "Oof! My Ex-Boyfriend just joined!", reply_to_message_id=reply
+                update.effective_message.reply_photo("https://telegra.ph/file/f8eabf5e5cb9d28df8892.png", 
+                    "Oof! My Friend just joined!", reply_to_message_id=reply
                 )
                 continue
 
@@ -373,10 +373,10 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                             [
                                 {
                                     InlineKeyboardButton(
-                                        text="Support",
+                                        text="sᴜᴘᴘᴏʀᴛ",
                                         url=f"https://t.me/{SUPPORT_CHAT}"),
                                     InlineKeyboardButton(
-                                        text="Updates",
+                                        text="Uᴘᴅᴀᴛᴇ",
                                         url=f"https://t.me/{UPDATE_CHANNEL}",
                                     )
                                 }
