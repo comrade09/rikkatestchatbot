@@ -498,7 +498,7 @@ def lined(update, context):
     else:
         message.reply_text(string)
 
-__mod_name__ = "Styletext"
+__mod_name__ = "Sᴛʏʟᴇᴛᴇxᴛ"
 
 __help__ = """
 Here is the help for the *Style-Text* module:
