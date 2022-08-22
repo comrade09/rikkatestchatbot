@@ -287,7 +287,7 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n• Username: @{html.escape(user.username)}"
 
-    text += f"\n• Crush: {mention_html(user.id, 'link')}"
+    text += f"\n• Crush: {mention_html(user.id, 'Bakaa')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n• Presence: <code>{}</code>"
@@ -311,7 +311,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Husband'."
+        text += "\n\nAre Yeh To Meri Jaan Hain 🙂❤."
     elif user.id in DEV_USERS:
         text += "\n\nThis person is my 'Lover'."
         disaster_level_present = True
