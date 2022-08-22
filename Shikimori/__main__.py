@@ -207,11 +207,6 @@ def main():
                 ]
             ),
         )
-            time.sleep(15)
-            try:
-                msg.delete()
-            except BadRequest:
-                pass
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
