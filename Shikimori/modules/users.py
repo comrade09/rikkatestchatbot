@@ -6,7 +6,7 @@ from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler
 
 import Shikimori.modules.sql.users_sql as sql
-from Shikimori import dispatcher, LOGGER, CARDINALS
+from Shikimori import dispatcher, LOGGER, DEV_USERS
 from Shikimori.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
