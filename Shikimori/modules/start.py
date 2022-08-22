@@ -69,7 +69,7 @@ buttons = [
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ], 
     [
-        InlineKeyboardButton(text=f"Mʏ Hᴜsʙᴀɴᴅ", url=f"t.me/{OWNER_USERNAME}"),
+        InlineKeyboardButton(text=f"Dᴇᴠᴇʟᴏᴘᴇʀ", url=f"t.me/Iamjeansama"),
     ],
 ]
 
@@ -107,7 +107,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             uptime = get_readable_time((time.time() - StartTime))
-            hmm = "◍ Hᴇʟʟᴏ *{}*!".format(escape_markdown(first_name))
+            hmm = "◍ Bᴀᴋᴀ *{}*!".format(escape_markdown(first_name))
             start_text = hmm + PM_START_TEXT.format(uptime)
             try:
                 if start_id in ("jpeg", "jpg", "png"):
