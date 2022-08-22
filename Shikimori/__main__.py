@@ -195,7 +195,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",              
-                f"""**I am Alive.[✦](https://telegra.ph/file/1f627172070d15a5f0d49.mp4)!**""",
+                f"""**I am ready to concert [!](https://telegra.ph/file/1f627172070d15a5f0d49.mp4)!**""",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                 [
