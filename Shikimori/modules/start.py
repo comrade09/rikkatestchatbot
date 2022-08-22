@@ -69,7 +69,7 @@ buttons = [
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ], 
     [
-        InlineKeyboardButton(text=f"Dᴇᴠᴇʟᴏᴘᴇʀ", url=f"t.me/Iamjeansama"),
+        InlineKeyboardButton(text=f"Dᴇᴠᴇʟᴏᴘᴇʀ", url=f"t.me/Iamjeansama/3"),
     ],
 ]
 
