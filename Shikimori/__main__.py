@@ -192,33 +192,20 @@ alive_id = ALIVE_ID[-1]
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            if alive_id in ("jpeg", "jpg", "png"):
-                msg = dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
-                photo=ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("mp4", "mkv"):
-                msg = dispatcher.bot.send_video(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("gif", "webp"):
-                msg = dispatcher.bot.send_animation(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            else:
-                msg = dispatcher.bot.send_text(
-                f"@{SUPPORT_CHAT}",
-                "👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
+            dispatcher.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",              
+                f"""**I am Alive.[✦](hhttps://telegra.ph/file/1f627172070d15a5f0d49.mp4)!**""",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="✦ PLAY VOILLEN ✦",
+                             url="https://t.me/KaoriXRobot?startgroup=true")
+                     ] 
+                ]
+            ),
+        )
             time.sleep(15)
             try:
                 msg.delete()
