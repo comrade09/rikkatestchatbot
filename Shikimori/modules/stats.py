@@ -102,7 +102,7 @@ def stats(update, context):
                     [
                         [                  
                             InlineKeyboardButton(
-                                    text="Bᴏᴛ Oᴡɴᴇʀ",
+                                    text="Dᴇᴠᴇʟᴏᴘᴇʀ",
                                     url="https://t.me/Zenko_0"),
                         ]
                     ]
@@ -118,7 +118,7 @@ def stats(update, context):
                     [
                         [                  
                             InlineKeyboardButton(
-                                    text="Bᴏᴛ Oᴡɴᴇʀ",
+                                    text="Dᴇᴠᴇʟᴏᴘᴇʀ",
                                     url="https://t.me/Zenko_0"),
                         ]
                     ]
@@ -141,7 +141,7 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                                text="Bᴏᴛ Oᴡɴᴇʀ",
+                                text="Dᴇᴠᴇʟᴏᴘᴇʀ",
                                 url="https://t.me/Zenko_0"),
                      ] 
                 ]
