@@ -56,7 +56,7 @@ def afk(update, context):
     REDIS.set(f'afk_time_{update.effective_user.id}', start_afk_time)
     fname = update.effective_user.first_name
     try:
-        Shikimori = update.effective_message.reply_text(
+        Shikimori = update.effective_message.reply_video("https://telegra.ph/file/a33ccd9bbf20ebae92f3f.mp4", 
             "*{}* is now Ded! GoodBye!".format(fname), parse_mode=ParseMode.MARKDOWN)
         time.sleep(5)
         try:
