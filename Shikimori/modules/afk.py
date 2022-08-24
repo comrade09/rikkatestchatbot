@@ -47,6 +47,8 @@ def afk(update, context):
     if not user:  # ignore channels
         return
 
+    if user.id == 777000:
+        return
     start_afk_time = time.time()
     if len(args) >= 2:
         reason = args[1]
@@ -56,13 +58,9 @@ def afk(update, context):
     REDIS.set(f'afk_time_{update.effective_user.id}', start_afk_time)
     fname = update.effective_user.first_name
     try:
-        Shikimori = update.effective_message.reply_video("https://telegra.ph/file/a33ccd9bbf20ebae92f3f.mp4", 
-            "*{}* is now Ded! GoodBye!".format(fname), parse_mode=ParseMode.MARKDOWN)
-
-       except BadRequest:
-           pass
+        update.effective_message.reply_animation("https://telegra.ph/file/a33ccd9bbf20ebae92f3f.mp4", caption="{} is now Away!".format(fname))
     except BadRequest:
-         pass
+        pass
 
 def no_longer_afk(update, context):
     user = update.effective_user
