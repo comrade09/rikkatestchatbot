@@ -59,8 +59,8 @@ def afk(update, context):
         Shikimori = update.effective_message.reply_video("https://telegra.ph/file/a33ccd9bbf20ebae92f3f.mp4", 
             "*{}* is now Ded! GoodBye!".format(fname), parse_mode=ParseMode.MARKDOWN)
 
-        except BadRequest:
-            pass
+       except BadRequest:
+           pass
     except BadRequest:
          pass
 
