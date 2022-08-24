@@ -64,7 +64,7 @@ def get_readable_time(seconds: int) -> str:
 def ping(update: Update, _):
     msg = update.effective_message
     start_time = time.time()
-    message = msg.reply_photo("https://telegra.ph/file/2c3c0dda11ce35a082dca.jpg",Caption=Pinging...")
+    message = msg.reply_photo("https://telegra.ph/file/2c3c0dda11ce35a082dca.jpg", caption = Pinging...")
     end_time = time.time()
     ping_time = round((end_time - start_time) * 1000, 3)
     uptime = get_readable_time((time.time() - StartTime))
