@@ -58,14 +58,7 @@ def afk(update, context):
     try:
         Shikimori = update.effective_message.reply_video("https://telegra.ph/file/a33ccd9bbf20ebae92f3f.mp4", 
             "*{}* is now Ded! GoodBye!".format(fname), parse_mode=ParseMode.MARKDOWN)
-        time.sleep(5)
-        try:
-            Shikimori.delete()
-        except BadRequest:
-            pass
-    except BadRequest:
-         pass
-
+        
 def no_longer_afk(update, context):
     user = update.effective_user
     message = update.effective_message
