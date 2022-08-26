@@ -68,7 +68,7 @@ def ping(update: Update, _):
     end_time = time.time()
     ping_time = round((end_time - start_time) * 1000, 3)
     uptime = get_readable_time((time.time() - StartTime))
-    message.edit_photo(
+    message.edit_media(
         "<b><a href='https://telegra.ph/file/2c3c0dda11ce35a082dca.jpg'>PONG</a></b>✨\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service Uptime:</b> <code>{}</code>".format(ping_time, uptime),
