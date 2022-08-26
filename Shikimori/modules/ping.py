@@ -24,6 +24,7 @@ import telegram
 from psutil import cpu_percent, virtual_memory, disk_usage, boot_time
 from spamwatch import __version__ as __sw__
 from telegram import ParseMode, Update
+from pyrogram.enums import ParseMode
 from telegram.ext import CommandHandler, Filters, CallbackContext
 
 from Shikimori import dispatcher, OWNER_ID
