@@ -12,11 +12,11 @@ PHOTO = "https://telegra.ph/file/e465194098909856f9647.png"
 @register(pattern=("/pfp"))
 async def awake(event):
     TEXT = "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ \n"
-    TEXT += "┣ 🔸[𝗔𝗻𝗶𝗺𝗲 𝗣FP'𝘀](https://t.me/MysticPfp/164) \n"
+    TEXT += "┣ 🔸[𝗔𝗻𝗶𝗺𝗲 𝗣𝗙𝗣'𝘀](https://t.me/MysticPfp/164) \n"
     TEXT += "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈"
     BUTTON = [
         [
-            Button.url("[🔸Anime PFP🔸]", "https://t.me/MysticPfp"),
+            Button.url("[🔸Anime PFP🔸]", "https://t.me/MysticPfp/164"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=TEXT, buttons=BUTTON)
