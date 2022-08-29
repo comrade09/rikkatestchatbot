@@ -135,7 +135,7 @@ def start(update: Update, context: CallbackContext):
         start_buttons = [
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}")
+                    InlineKeyboardButton(text="Mʏsᴛɪᴄ Aɴɪᴍᴇ", url=f"https://t.me/Mystic_Anime")
                  ]
                 ]
         chat_id = update.effective_chat.id
