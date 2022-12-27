@@ -51,12 +51,12 @@ def awake(update: Update, context: CallbackContext):
     TEXT = f"""
     <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} Robot.
 
- I'm Working Properly
+⚪ I'm Working Properly
 
- ✨My Owners : <a href="https://t.me/{OWNER_USERNAME}">Sneha</a></b> & <a href="https://t.me/Ath2023">Atharva</a></b>
+⚪ My Owner : <a href="https://t.me/{OWNER_USERNAME}">{OWNER_USERNAME}</a></b>
     """
     if NETWORK:
-        TEXT = TEXT + f'\n⚡️ <b>I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'Thanks For Adding Me Here ❤️</b>'
+        TEXT = TEXT + f'\n⚪ <b>I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'Thanks For Adding Me Here ❤️</b>'
     
     else:
         TEXT = TEXT + "\n<b>Thanks For Adding Me Here ❤️</b>"
@@ -81,8 +81,8 @@ __handlers__ = [
     ALIVE_HANDLER,
 ]
 
-__mod_name__ = "Aʟɪᴠᴇ"
+__mod_name__ = "Alive ✨"
 __help__ = """
-*Aʟɪᴠᴇ*
+*ALIVE*
  ❍ `/alive` :Check BOT status
 """
