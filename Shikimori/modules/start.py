@@ -50,11 +50,6 @@ Hello there,The name's *Mizuhara* [🧚‍♂️](https://telegra.ph/file/195be3
 I am an Anime themed group management with some fun features.
 Make sure you read *About Me* section below."""
 
-HELP_STRINGS = """
-Hey there... I'm Power 🧚‍♂️
-I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
-Click on the buttons below to get documentation about specific modules.."""
-
 buttons = [
      [
         InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
@@ -68,6 +63,10 @@ buttons = [
         InlineKeyboardButton(text="Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ],
 ]
+
+HELP_STRINGS = """ Hey there... I'm Power 🧚‍♂️
+I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
+Click on the buttons below to get documentation about specific modules.. """
 
 def start(update: Update, context: CallbackContext):
     args = context.args
