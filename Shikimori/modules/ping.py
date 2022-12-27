@@ -69,7 +69,7 @@ def ping(update: Update, _):
     ping_time = round((end_time - start_time) * 1000, 3)
     uptime = get_readable_time((time.time() - StartTime))
     message.edit_text(
-        "<b><a href='https://telegra.ph/file/2c3c0dda11ce35a082dca.jpg'>PONG</a></b>✨\n"
+        "<b>PONG</b> ✨\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service Uptime:</b> <code>{}</code>".format(ping_time, uptime),
         parse_mode=ParseMode.HTML,
