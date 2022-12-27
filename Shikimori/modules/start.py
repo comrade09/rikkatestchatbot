@@ -44,32 +44,28 @@ from telegram.utils.helpers import escape_markdown
 
 bot_name = f"{dispatcher.bot.first_name}"
 
-IMG_START = START_MEDIA.split(".")
-start_id = IMG_START[-1]
 
-PM_START_TEXT = """
-\n◍ I'ᴍ Kᴀᴏʀɪ Mɪʏᴀᴢᴏɴᴏ A Gʀᴏᴜᴘ 
-Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ Bᴀsᴇᴅ Oɴ Tʜᴇ Aɴɪᴍᴇ Yᴏᴜʀ Lɪᴇ Iɴ Aᴘʀɪʟ.
-────────────────────────
-× Uᴘᴛɪᴍᴇ: {}
-────────────────────────
-✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
-"""
+PM_START_TEXT = f"""
+Hello there,The name's *Mizuhara* [🧚‍♂️](https://telegra.ph/file/195be370e7c1d20ff4188.jpg)
+I am an Anime themed group management with some fun features.
+Make sure you read *About Me* section below."""
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+Hey there... I'm Power 🧚‍♂️
+I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
+Click on the buttons below to get documentation about specific modules.."""
 
 buttons = [
-    [
-        InlineKeyboardButton(
-            text=f"➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+     [
+        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
     ],
     [
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),
-    ], 
+        InlineKeyboardButton(text=" About Me ", url=f"https://t.me/tpxsupport404"),
+    ],
+   
     [
-        InlineKeyboardButton(text=f"Dᴇᴠᴇʟᴏᴘᴇʀ", url=f"t.me/Iamjeansama/3"),
+        InlineKeyboardButton(text=" Commands Help ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ],
 ]
 
