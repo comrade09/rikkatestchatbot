@@ -50,7 +50,7 @@ Click on the buttons below to get documentation about specific modules.."""
 
 buttons = [
      [
-        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/rikka_tyrant_bot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ ADD Me TO YOUR GROUP ➕", url="t.me/rikka_tyrant_bot?startgroup=true"),   
     ],
     [
         InlineKeyboardButton(text=" About Me ", url=f"https://t.me/shinobu_support"),
