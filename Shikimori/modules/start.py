@@ -72,10 +72,16 @@ buttons = [
     ],
 ]
 
-HELP_STRINGS = """ 
-Hey there... 
-I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun n many others useful commands!
-Click on the buttons below to get documentation about specific modules..."""
+HELP_STRINGS = """
+Main commands available:
+➛ /help: PM's you this message.
+➛ /help <module name>: PM's you info about that module.
+➛ /donate: information on how to donate!
+➛ /settings:
+   ➛ in PM: will send you your settings for all supported modules.
+   ➛ in a group: will redirect you to pm, with all that chat's settings
+"""
+
 
 def start(update: Update, context: CallbackContext):
     args = context.args
