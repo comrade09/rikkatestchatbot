@@ -21,7 +21,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-from Shikimori.vars import ALIVE_MEDIA, UPDATE_CHANNEL, SUPPORT_CHAT, OWNER_USERNAME, NETWORK, NETWORK_USERNAME, 
+from Shikimori.vars import ALIVE_MEDIA, UPDATE_CHANNEL, SUPPORT_CHAT, OWNER_USERNAME, NETWORK, NETWORK_USERNAME
 from Shikimori import dispatcher
 from Shikimori.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
