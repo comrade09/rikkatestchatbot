@@ -26,7 +26,7 @@ from Shikimori import DEV_USERS, OWNER_ID, telethn
 from telethon import events, Button
 from telegram import ParseMode
 
-BUTTON = [[Button.url("❓ What Is This", "https://t.me/KaoriXupdate/13")]]
+BUTTON = [[Button.url("❓ What Is This", "Shikimori_bot_Updates/34")]]
 COMET = "https://t.me"
 STAR = "https://t.me"
 WISH = """
