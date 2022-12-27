@@ -57,7 +57,7 @@ I'ᴍ Rikka Takanashi
 
 buttons = [
      [
-        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ ADD Me TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
     ],
     [
         InlineKeyboardButton(text=" About Me ", url=f"https://t.me/tpxsupport404"),
