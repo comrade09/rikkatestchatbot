@@ -111,7 +111,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "Baap Se Bakchodi Nahi Beta.",
+            " Beta Aaram krlo Thoda",
         )
         return
 
