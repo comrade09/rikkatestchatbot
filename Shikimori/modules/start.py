@@ -72,9 +72,10 @@ buttons = [
     ],
 ]
 
-HELP_STRINGS = """ Hey there... 
-I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
-Click on the buttons below to get documentation about specific modules.. """
+HELP_STRINGS = """ 
+Hey there... 
+I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun n many others useful commands!
+Click on the buttons below to get documentation about specific modules..."""
 
 def start(update: Update, context: CallbackContext):
     args = context.args
