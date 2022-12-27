@@ -236,7 +236,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                TEXT = "Behold!! My Husband is Here."
+                TEXT = "Behold!! My Owner is Here."
                 try:
                     if wel_id in ("jpeg", "jpg", "png"):
                         update.effective_message.reply_photo(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                 
             # Welcome Devs
             if new_mem.id in DEV_USERS:
-                update.effective_message.reply_photo("https://telegra.ph/file/2fe0d5fd9097fbc0228b5.jpg", 
+                update.effective_message.reply_photo("https://telegra.ph/file/b2d554241222fa7ea16a5.jpg", 
                     "Whoa! My Lover just joined!",
                     reply_to_message_id=reply,
                 )
@@ -267,7 +267,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome Sudos
             if new_mem.id in DRAGONS:
-                update.effective_message.reply_photo("https://telegra.ph/file/0fba20a6bcf33efa4dadc.jpg", 
+                update.effective_message.reply_photo("https://telegra.ph/file/b2d554241222fa7ea16a5.jpg", 
                     "Huh! My Boy Friend just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
@@ -275,7 +275,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome Support
             if new_mem.id in DEMONS:
-                update.effective_message.reply_photo("https://telegra.ph/file/ad81be737ed87506e67b1.jpg", 
+                update.effective_message.reply_photo("https://telegra.ph/file/b2d554241222fa7ea16a5.jpg", 
                     "Huh! one of my crush just joined!",
                     reply_to_message_id=reply,
                 )
@@ -283,7 +283,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Welcome WOLVES
             if new_mem.id in WOLVES:
-                update.effective_message.reply_photo("https://telegra.ph/file/f8eabf5e5cb9d28df8892.png", 
+                update.effective_message.reply_photo("https://telegra.ph/file/b2d554241222fa7ea16a5.jpg", 
                     "Oof! My Friend just joined!", reply_to_message_id=reply
                 )
                 continue
