@@ -31,31 +31,30 @@ from Shikimori import StartTime, dispatcher
 
 bot_name = f"{dispatcher.bot.first_name}"
 
+
 PM_START_TEXT = """
-\n◍ I'ᴍ Kᴀᴏʀɪ Mɪʏᴀᴢᴏɴᴏ Fʀᴏᴍ Yᴏᴜʀ Lɪᴇ Iɴ Aᴘʀɪʟ
-◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
-────────────────────────
-× Uᴘᴛɪᴍᴇ: {}
-────────────────────────
-✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
-"""
+Hello there,The name's *Mizuhara* [🧚‍♂️](https://telegra.ph/file/195be370e7c1d20ff4188.jpg)
+I am an Anime themed group management with some fun features.
+Make sure you read *About Me* section below."""
+
+HELP_STRINGS = """
+Hey there... I'm Power 🧚‍♂️
+I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
+Click on the buttons below to get documentation about specific modules.."""
 
 buttons = [
-    [
-        InlineKeyboardButton(
-            text=f"➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+     [
+        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
     ],
     [
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),
-    ], 
+        InlineKeyboardButton(text=" About Me ", url=f"https://t.me/shinobu_support"),
+    ],
+   
     [
-        InlineKeyboardButton(text=f"Mʏ Hᴜsʙᴀɴᴅ", url=f"t.me/{OWNER_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text=" Commands Help ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ],
 ]
-
-network_name = NETWORK_USERNAME.lower()
-
 try:
     if network_name == "uchihaxnetwork":
         HMMM = InlineKeyboardButton(text="❟❛❟ 𝖀𝖈𝖍𝖎𝖍𝖆 ❟❛❟ 𝙉𝙚𝙩𝙬𝙤𝙧𝙠", callback_data="sern_")
@@ -148,18 +147,14 @@ def sern_call_back(update: Update, context: CallbackContext):
     if query.data == "sern_":
         query.message.edit_text(
             text=f"""
-ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [❟❛❟ 𝖀𝖈𝖍𝖎𝖍𝖆 ❟❛❟ 𝘕𝘌𝘛𝘞𝘖𝘙𝘒](https://t.me/UchihaXNetwork/70),
-𝖀𝖈𝖍𝖎𝖍𝖆 𝙞𝙨 𝙖𝙣 𝙖𝙣𝙞𝙢𝙚 𝙗𝙖𝙨𝙚𝙙 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙮 𝙬𝙞𝙩𝙝 𝙖 𝙢𝙤𝙩𝙞𝙫𝙚 𝙩𝙤 𝙨𝙥𝙧𝙚𝙖𝙙 𝙡𝙤𝙫𝙚 𝙖𝙣𝙙 𝙥𝙚𝙖𝙘𝙚 𝙖𝙧𝙤𝙪𝙣𝙙 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢. 𝙂𝙤 𝙩𝙝𝙧𝙤𝙪𝙜𝙝 𝙩𝙝𝙚 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙖𝙣𝙙 𝙟𝙤𝙞𝙣 𝙩𝙝𝙚 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙮, 𝙞𝙛 𝙞𝙩 𝙙𝙧𝙖𝙬𝙨 𝙮𝙤𝙪𝙧 𝙖𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣.
+join @shinobu_support.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton(text="❟❛❟ 𝖀𝖈𝖍𝖎𝖍𝖆 ❟❛❟ 𝙉𝙚𝙩𝙬𝙤𝙧𝙠", url="https://t.me/UchihaXNetwork/70")],
-                    [
-                    InlineKeyboardButton(text="★彡[ᴜꜱᴇʀ ᴛᴀɢ]彡★", url="https://t.me/UchihaXNetwork/74"),
-                    InlineKeyboardButton(text="★彡[ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ]彡★", url="https://t.me/Uchihashrine")
-                    ],
+                    [InlineKeyboardButton(text="Shinobu ", url="https://t.me/shinobu_support")],
+                    
                 ]
             ),
         )
