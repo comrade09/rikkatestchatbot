@@ -46,7 +46,7 @@ I'ᴍ {} Fʀᴏᴍ {}
 """ """
 
 HELP_STRINGS = """
-Hey there... Im Power 🧚‍♂️
+Hey there... Im Power 
 I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
 Click on the buttons below to get documentation about specific modules.."""
 
