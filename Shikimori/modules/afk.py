@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import time
-from .redis import REDIS
+
 
 from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
