@@ -46,9 +46,17 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 
 PM_START_TEXT = f"""
-Hello there,The name's *Mizuhara* [🧚‍♂️](https://telegra.ph/file/195be370e7c1d20ff4188.jpg)
-I am an Anime themed group management with some fun features.
-Make sure you read *About Me* section below."""
+Hey There! [👩‍💼](https://telegra.ph/file/b2d554241222fa7ea16a5.jpg) 
+◍ ʜᴇʏ {} ꜱᴀɴ 
+I'ᴍ {} Fʀᴏᴍ {}
+◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+────────────────────────
+× Uᴘᴛɪᴍᴇ: {}
+× ᴜꜱᴇʀꜱ :{}
+× ᴄʜᴀᴛꜱ :{}
+────────────────────────
+✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
+""" """
 
 buttons = [
      [
@@ -64,7 +72,7 @@ buttons = [
     ],
 ]
 
-HELP_STRINGS = """ Hey there... I'm Power 🧚‍♂️
+HELP_STRINGS = """ Hey there... 
 I have lots of features like AI Chatbot, Anime, Music, Notes, Filters, Fun and many others useful commands!
 Click on the buttons below to get documentation about specific modules.. """
 
