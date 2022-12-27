@@ -47,13 +47,10 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 PM_START_TEXT = """
 \n◍ Hey There! [👩‍💼](https://telegra.ph/file/b2d554241222fa7ea16a5.jpg) 
-◍ ʜᴇʏ {} ꜱᴀɴ 
-I'ᴍ {} Fʀᴏᴍ {}
+I'ᴍ Rikka Takanashi 
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
 × Uᴘᴛɪᴍᴇ: {}
-× ᴜꜱᴇʀꜱ :{}
-× ᴄʜᴀᴛꜱ :{}
 ────────────────────────
 ✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
 """
