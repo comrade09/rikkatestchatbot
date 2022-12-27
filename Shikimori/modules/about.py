@@ -33,9 +33,17 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 
 PM_START_TEXT = """
-Hello there,The name's *Mizuhara* [🧚‍♂️](https://telegra.ph/file/195be370e7c1d20ff4188.jpg)
-I am an Anime themed group management with some fun features.
-Make sure you read *About Me* section below."""
+Hey There! [👩‍💼](https://telegra.ph/file/b2d554241222fa7ea16a5.jpg) 
+◍ ʜᴇʏ {} ꜱᴀɴ 
+I'ᴍ {} Fʀᴏᴍ {}
+◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+────────────────────────
+× Uᴘᴛɪᴍᴇ: {}
+× ᴜꜱᴇʀꜱ :{}
+× ᴄʜᴀᴛꜱ :{}
+────────────────────────
+✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
+""" """
 
 HELP_STRINGS = """
 Hey there... I'm Power 🧚‍♂️
@@ -44,7 +52,7 @@ Click on the buttons below to get documentation about specific modules.."""
 
 buttons = [
      [
-        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ ADD Chizuru TO YOUR GROUP ➕", url="t.me/rikka_tyrant_bot?startgroup=true"),   
     ],
     [
         InlineKeyboardButton(text=" About Me ", url=f"https://t.me/shinobu_support"),
