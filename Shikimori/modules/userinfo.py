@@ -244,10 +244,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/KaoriXupdate/12"),
+                             url="https://t.me/Shikimori_bot_Updates/9"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/KaoriXupdate/9"),
+                             url="https://t.me/Shikimori_bot_Updates/6"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -287,7 +287,7 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n• Username: @{html.escape(user.username)}"
 
-    text += f"\n• Crush: {mention_html(user.id, 'My Baka')}"
+    text += f"\n• Userlink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n• Presence: <code>{}</code>"
@@ -311,7 +311,7 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis Person Is My 'Husband'."
+        text += "\n\nThis Person Is My 'Owner'."
     elif user.id in DEV_USERS:
         text += "\n\nThis person is my 'Lover'."
         disaster_level_present = True
