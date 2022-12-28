@@ -47,7 +47,7 @@ bot_name = f"{dispatcher.bot.first_name}"
 
 PM_START_TEXT = """
 \n◍ Hey There! [👩‍💼](https://telegra.ph/file/b2d554241222fa7ea16a5.jpg) 
-I'ᴍ Rikka Takanashi 
+I'ᴍ ʀɪᴋᴋᴀ ᴛᴀᴋᴀɴᴀꜱʜɪ Fʀᴏᴍ 
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
 × Uᴘᴛɪᴍᴇ: {}
@@ -60,12 +60,12 @@ buttons = [
         InlineKeyboardButton(text="➕ ADD Me TO YOUR GROUP ➕", url="t.me/chizuru_mizuhara_robot?startgroup=true"),   
     ],
     [
-        InlineKeyboardButton(text=" About Me ", url=f"https://t.me/tpxsupport404"),
+        InlineKeyboardButton(text=" About Me ❄️ ", url=f"https://t.me/tpxsupport404"),
     ],
    
     [
-        InlineKeyboardButton(text=" Commands Help ❓", callback_data="help_back"),
-        InlineKeyboardButton(text="Updates", url=f"https://t.me/{UPDATE_CHANNEL}"),
+        InlineKeyboardButton(text=" Commands/Help 📚", callback_data="help_back"),
+        InlineKeyboardButton(text="Updates 📡", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ],
 ]
 
