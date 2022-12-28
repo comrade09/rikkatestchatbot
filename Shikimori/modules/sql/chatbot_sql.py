@@ -21,24 +21,45 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-from Shikimori.mongo import db
+import threading
 
-chatbotdb = db.chatbot
+from sqlalchemy import Column, String
 
-def is_chatbot(chat_id: int) -> bool:
-    chatbot = chatbotdb.find_one({"chat_id": chat_id})
-    if chatbot:
-        return True
-    return False
+from Shikimori.modules.sql import BASE, SESSION
 
-def add_chatbot(chat_id):
-    chatbot = is_chatbot(chat_id)
-    if chatbot:
-        return
-    return chatbotdb.insert_one({"chat_id": chat_id})
 
-def rm_chatbot(chat_id):
-    chatbot = is_chatbot(chat_id)
-    if not chatbot:
-        return
-    return chatbotdb.delete_one({"chat_id": chat_id})
+class ShikimoriChats(BASE):
+    __tablename__ = "shikimori_chats"
+    chat_id = Column(String(14), primary_key=True)
+
+    def __init__(self, chat_id):
+        self.chat_id = chat_id
+
+
+ShikimoriChats.__table__.create(checkfirst=True)
+INSERTION_LOCK = threading.RLock()
+
+
+def is_shikimori(chat_id):
+    try:
+        chat = SESSION.query(ShikimoriChats).get(str(chat_id))
+        return bool(chat)
+    finally:
+        SESSION.close()
+
+
+def set_shikimori(chat_id):
+    with INSERTION_LOCK:
+        shikimorichat = SESSION.query(ShikimoriChats).get(str(chat_id))
+        if not fallenchat:
+            fallenchat = ShikimoriChats(str(chat_id))
+        SESSION.add(shikimorichat)
+        SESSION.commit()
+
+
+def rem_shikimori(chat_id):
+    with INSERTION_LOCK:
+        shikimorichat = SESSION.query(ShikimoriChats).get(str(chat_id))
+        if fallenchat:
+            SESSION.delete(shikimorichat)
+        SESSION.commit()
