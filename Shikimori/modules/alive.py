@@ -51,19 +51,18 @@ def awake(update: Update, context: CallbackContext):
     TEXT = f"""
     <b>Hi <a href="tg://user?id={user.id}">{first_name}</a>, I'm {bot_name} .
 
-✨ ɪᴀᴍ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴀꜱ ᴀʟᴡᴀʏꜱ
+✨ I am ʀɪᴋᴋᴀ ᴛᴀᴋᴀɴᴀꜱʜɪ
+✨ ɪ ᴀᴍ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴀꜱ ᴀʟᴡᴀʏꜱ
 
-⚡ᴍʏ ᴏᴡɴᴇʀꜱ : [ᴀᴛʜᴀʀᴠᴀ] (https://t.me/Ath2023)
-
-⚡ᴀɴᴅ: <a href="https://t.me/{OWNER_USERNAME}">"Sneha"</a></b>
+⚡ᴍʏ ᴏᴡɴᴇʀꜱ : @Ath2023 ᴀɴᴅ: <a href="https://t.me/{OWNER_USERNAME}">{OWNER_USERNAME}</a></b>
    
 
  """
     if NETWORK:
-        TEXT = TEXT + f'\n⚪ <b>I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'Thanks For Adding Me Here ❤️</b>'
+        TEXT = TEXT + f'\n⚪ <b>I am Powered by : <a href="https://t.me/{NETWORK_USERNAME}">{NETWORK}</a>\n\n' + 'ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ'</b>'
     
     else:
-        TEXT = TEXT + "\n<b>Thanks For Adding Me Here ❤️</b>"
+        TEXT = TEXT + "\n<b>ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ</b>"
 
     try:
         if alive_id in ("jpeg", "jpg", "png"):
